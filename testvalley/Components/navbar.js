@@ -4,13 +4,13 @@ import { IoMdMenu } from "react-icons/io";
 
 const Navbar = () => {
   return (
-    <header className="">
-      <div className="xl:container xl:mx-auto flex flex-col items-center sm:flex-row sm:justify-between text-center py-3">
-        <div className="flex  items-center ">
+    <header className=" shadow-md w-full">
+      <div className="flex container flex-col items-center sm:flex-row sm:justify-between text-center py-3">
+        <div className="flex ml-40 ">
           <Image
             src="/logo-new.svg"
             alt="Logo"
-            layout="fixed"
+           
             width="140"
             height="85"
             position="relative"
@@ -23,11 +23,11 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className="relative md:flex-none w-96 order-2 sm:order-1 flex justify-center ml-24 py-4 sm:py-0 ">
+        <div className="relative md:flex-none w-96 order-2 sm:order-1 flex justify-center ml-1 py-4 sm:py-0 ">
           <input
             type="text"
             placeholder="If you’re wondering whether to buy it or not"
-            className="pl-8 pr-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-TestValley-700 w-full"
+            className="pl-8 pr-4 py-2 border border-gray-200 rounded-md  focus:outline-none focus:border-TestValley-700 w-full"
           />
           <Image
             src="/search.svg"

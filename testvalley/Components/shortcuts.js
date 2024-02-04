@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import Image from 'next/image';
 const Shortcuts = () => {
   const [shortcuts, setShortcuts] = useState([]);
 
@@ -20,13 +20,15 @@ const Shortcuts = () => {
   }, []);
 
   return (
-    <div className="flex items-center  opacity-90 justify-center gap-10">
+    <div className="flex items-center opacity-90 justify-center gap-10">
       {shortcuts.map((shortcut) => (
         <div key={shortcut.mainShortcutId} className="text-center">
-          <img
+          <Image
             src={shortcut.imageUrl}
             alt={shortcut.title}
-            className="  w-16  h-16 object-cover "
+            width={64} 
+            height={64}
+            objectFit="cover"
           />
           <p className="text-sm font-medium mt-2">{shortcut.title}</p>
         </div>
