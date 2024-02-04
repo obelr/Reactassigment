@@ -27,8 +27,8 @@ const ImageSlider = () => {
   }, []);
 
   return (
-    <section className="py-12 px-12">
-      <div className="">
+    <section className=" my-12 mx-12 container ">
+      
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y]}
           spaceBetween={30}
@@ -54,7 +54,7 @@ const ImageSlider = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-      </div>
+     
     </section>
   );
 };
